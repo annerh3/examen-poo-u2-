@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProyectoExamenU2POO.Database;
 using ProyectoExamenU2POO.Helpers;
+using ProyectoExamenU2POO.Services;
+using ProyectoExamenU2POO.Services.Interfaces;
 namespace ProyectoExamenU2POO
 {
     public class Startup
@@ -25,7 +27,7 @@ namespace ProyectoExamenU2POO
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             // Add custom services
-            // services.AddTransient<ICategoriesService, CategoriesSQLService>();
+             services.AddTransient<IClienteService, ClienteService>();
 
 
             // Add AutoMapper

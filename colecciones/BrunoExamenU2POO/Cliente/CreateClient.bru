@@ -1,0 +1,23 @@
+meta {
+  name: CreateClient
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PATH}}/loans
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Juan Perez",
+    "montoPrestamo": 10000,
+    "montoComision": 200,
+    "tasaInteres": 12,
+    "plazo": 24,
+    "fechaDesembolso": "2024-08-01",
+    "fechaPrimerPago": "2024-09-01"
+  }
+}

@@ -22,10 +22,4 @@
 
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Database\Entities\" />
-    <Folder Include="Services\Interfaces\" />
-  </ItemGroup>
-
 </Project>

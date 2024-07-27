@@ -1,20 +1,24 @@
-﻿namespace ProyectoExamenU2POO.Helpers
+﻿using AutoMapper;
+using ProyectoExamenU2POO.Database.Entities;
+using ProyectoExamenU2POO.Dtos.Clientes;
+
+namespace ProyectoExamenU2POO.Helpers
 {
-    public class AutoMapperProfile
+    public class AutoMapperProfile : Profile
     {
         public AutoMapperProfile()
         {
-           // MapsForCategories();
+           MapsForClientes();
         }
 
-        //private void MapsForCategories()
-        //{
-        //    CreateMap<ORIGEN, DESTINO>();
-        //    CreateMap<CategoryEntity, CategoryDto>();
+        private void MapsForClientes()
+        {
+           // CreateMap<ORIGEN, DESTINO>();
+            CreateMap<ClienteEntity, ClienteDto>();
 
-        //    CreateMap<CategoryCreateDto, CategoryEntity>();
-        //    CreateMap<CategoryEditDto, CategoryEntity>();
-
-        //}
+            CreateMap<ClienteCreateDto, ClienteEntity>();
+        
+   
+        }
     }
 }

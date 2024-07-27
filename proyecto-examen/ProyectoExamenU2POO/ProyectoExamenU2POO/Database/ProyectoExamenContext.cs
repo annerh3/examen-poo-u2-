@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ProyectoExamenU2POO.Database.Entities;
 
 namespace ProyectoExamenU2POO.Database
 {
@@ -10,6 +11,6 @@ namespace ProyectoExamenU2POO.Database
         }
 
 
-      //  public DbSet<EntityName> TableName { get; set; } // esto representa una tabla en la base
+        public DbSet<ClienteEntity> Clientes { get; set; } // esto representa una tabla en la base
     }
 }
