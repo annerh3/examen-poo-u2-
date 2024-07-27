@@ -14,9 +14,9 @@ namespace ProyectoExamenU2POO.Helpers
         private void MapsForClientes()
         {
            // CreateMap<ORIGEN, DESTINO>();
-            CreateMap<ClienteEntity, ClienteDto>();
+            CreateMap<PrestamoEntity, PrestamoDto>();
 
-            CreateMap<ClienteCreateDto, ClienteEntity>();
+            CreateMap<PrestamoCreateDto, PrestamoEntity>();
         
    
         }

@@ -27,7 +27,7 @@ namespace ProyectoExamenU2POO
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             // Add custom services
-             services.AddTransient<IClienteService, ClienteService>();
+             services.AddTransient<IPrestamoService, PrestamoService>();
 
 
             // Add AutoMapper

@@ -2,12 +2,12 @@
 
 namespace ProyectoExamenU2POO.Dtos.Clientes
 {
-    public class ClienteCreateDto
+    public class PrestamoCreateDto
     {
-        [Display(Name = "Nombre")]
-        [Required(ErrorMessage = "El {0} de la categoria es requerido.")]
-        [StringLength(50)]
-        public string Nombre { get; set; }
+        [Display(Name = "Nombre del cliente")]
+        [Required(ErrorMessage = "El {0} es requerido.")]
+    
+        public string NombreCliente { get; set; }
 
         [Display(Name = "Monto del Prestamo")]
         [Required(ErrorMessage = "El {0} es requerido.")]
@@ -29,11 +29,11 @@ namespace ProyectoExamenU2POO.Dtos.Clientes
 
         [Display(Name = "Fecha de desembolso")]
         [Required(ErrorMessage = "El {0} es requerida.")]
-        public string FechaDesembolso { get; set; }
+        public DateOnly FechaDesembolso { get; set; }
 
         [Display(Name = "Fecha del Primer Pago")]
         [Required(ErrorMessage = "El {0} es requerido.")]
-        public string FechaPrimerPago { get; set; }
+        public DateOnly FechaPrimerPago { get; set; }
 
     }
 }

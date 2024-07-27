@@ -7,10 +7,13 @@ namespace ProyectoExamenU2POO.Database
     {
         public ProyectoExamenContext(DbContextOptions options) : base(options)
         {
-            
+
         }
 
+      
+        public DbSet<PrestamoEntity> Prestamos { get; set; }
+        public DbSet<PagoEntity> Pagos { get; set; }
+        public DbSet<PrestamoPagoEntity> PrestamoPagos { get; set; }
 
-        public DbSet<ClienteEntity> Clientes { get; set; } // esto representa una tabla en la base
     }
 }

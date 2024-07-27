@@ -6,8 +6,8 @@ using ProyectoExamenU2POO.Dtos.Common;
 
 namespace ProyectoExamenU2POO.Services.Interfaces
 {
-    public interface IClienteService
+    public interface IPrestamoService
     {
-        Task<ResponseDto<ClienteDto>> CreateAsync(ClienteCreateDto dto);
+        Task<ResponseDto<PrestamoDto>> CreateAsync(PrestamoCreateDto dto);
     }
 }

@@ -9,15 +9,15 @@ namespace ProyectoExamenU2POO.Controllers
     [Route("api/loans")]
     public class ClientController : ControllerBase
     {
-        private readonly IClienteService _clienteService;
+        private readonly IPrestamoService _clienteService;
 
-        public ClientController(IClienteService clienteService)
+        public ClientController(IPrestamoService clienteService)
         {
             _clienteService = clienteService;
         }
 
         [HttpPost]
-        public async Task<ActionResult<ResponseDto<ClienteDto>>> Create(ClienteCreateDto dto)
+        public async Task<ActionResult<ResponseDto<PrestamoDto>>> Create(PrestamoCreateDto dto)
         {
             var response = await _clienteService.CreateAsync(dto);
             return StatusCode(response.StatusCode, response);
